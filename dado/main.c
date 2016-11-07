@@ -11,7 +11,7 @@ int main()
   scanf("%d",&n_Lanci);
 
   for(i = 0; i < n_Lanci; i++){
-    n_Uscito = lancio_Dado();
+    n_Uscito = dado_Lancio();
     v_Dado[n_Uscito] += 1;
   }
 

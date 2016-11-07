@@ -1,6 +1,6 @@
 #ifndef DADO_H
 #define DADO_H
 
-int lancio_Dado();
+int dado_Lancio();
 void dado_init();
 #endif

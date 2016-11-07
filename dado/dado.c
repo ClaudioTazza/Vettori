@@ -1,7 +1,7 @@
 #include "random.h"
 #include <stdio.h>
 
-int lancio_Dado(){
+int dado_Lancio(){
   int risultato;
 
   risultato = random_between(0, 6);
