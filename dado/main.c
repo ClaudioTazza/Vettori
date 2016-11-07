@@ -23,6 +23,8 @@ int main()
     percentuale = (float)(v_Dado[i] * 100)/n_Lanci; 
     printf("%6d\t\t%6d\t\t%6.2f\n", i+1, v_Dado[i], percentuale);
   }
+  
+  printf("\nPercentuale teorica: 16.6\n");
 
   return 0;
 }
