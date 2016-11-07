@@ -4,6 +4,7 @@
 int main()
 {
   int n_Lanci, i, n_Uscito, v_Dado[6] = {0, 0, 0, 0, 0, 0};
+  float percentuale;
 
   dado_init();
 
@@ -15,10 +16,12 @@ int main()
     v_Dado[n_Uscito] += 1;
   }
 
-  printf("Num uscito   Quante volte\n");
+  printf("\n\n");
+  printf("Num uscito     Num volte     Percentuale\n");
 
   for( i = 0; i < 6; i++){
-    printf("%6d\t%6d\n", i+1, v_Dado[i]);
+    percentuale = (float)(v_Dado[i] * 100)/n_Lanci; 
+    printf("%6d\t\t%6d\t\t%6.2f\n", i+1, v_Dado[i], percentuale);
   }
 
   return 0;
