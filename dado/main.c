@@ -5,7 +5,7 @@ int main()
 {
   int n_Lanci, i, n_Uscito, v_Dado[6] = {0, 0, 0, 0, 0, 0};
 
-  init_Dado();
+  dado_init();
 
   printf("Inserisci il numero di lanci da effettuare: ");
   scanf("%d",&n_Lanci);
