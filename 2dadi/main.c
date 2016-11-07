@@ -34,6 +34,7 @@ int main()
   }
 
   printf("\nSecondo Dado\n");
+  printf("Num uscito     Num volte     Percentuale\n");
 
   for( i = 0; i < 6; i++){
     percentuale = (float)(v_Dado2[i] * 100)/n_Lanci2; 
