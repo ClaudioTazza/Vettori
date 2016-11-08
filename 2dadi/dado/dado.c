@@ -1,10 +1,12 @@
 #include "random.h"
 #include <stdio.h>
 
-int dado_Lancio(){
+int dado_Lanci(int a){
   int risultato;
+  int valore_Max = a * 6;
+  int valore_Min = a;
 
-  risultato = random_between(0, 6);
+  risultato = random_between(valore_Min - 1, valore_Max);
   return risultato;
 }
 
