@@ -1,12 +1,20 @@
 #include "random.h"
 #include <stdio.h>
 
-int dado_Lanci(int a){
+int dado_Lancio(){
   int risultato;
-  int valore_Max = a * 6;
-  int valore_Min = a;
 
-  risultato = random_between(valore_Min - 1, valore_Max);
+  risultato = random_between(1, 7);
+  return risultato;
+}
+
+int dado_Lancia_n(int a){
+  int risultato,i;
+  risultato = 0; 
+
+  for(i=0; i < a; i++){
+    risultato += dado_Lancio();}
+
   return risultato;
 }
 
