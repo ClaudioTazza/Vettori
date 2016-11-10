@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../myvect/myvect.h
+
+/home/lucifero/Scrivania/vettori/myvect/main.c
+stdio.h
+-
+myvect.h
+/home/lucifero/Scrivania/vettori/myvect/myvect.h
+
