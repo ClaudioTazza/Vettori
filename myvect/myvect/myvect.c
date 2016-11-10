@@ -16,7 +16,7 @@ void myvect_print(int vettore[], int n_elem){
   int i;
       
   for(i = 0; i < n_elem; i++){
-    printf("%6d\f%6d\n", i, vettore[i]);
+    printf("%6d\t%6d\n", i, vettore[i]);
   }
 }
 
