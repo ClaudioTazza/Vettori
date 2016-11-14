@@ -7,7 +7,7 @@ int main(){
   i = 50; 
   myvect_init();
 
-  myvect_vec_in_range(vettore, 10, 100, i);
+  myvect_vec_in_range(vettore, i, 10, 100);
 
   myvect_print(vettore, i);
 
