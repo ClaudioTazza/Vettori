@@ -21,9 +21,12 @@ void myvect_print(int vettore[], int n_elem){
 }
 
 void myvect_reverse(int vettore[], int n_elem){
-  int i;
-  for(i = 0; i < n_elem; i++){
-    vettore[i] = vettore[n_elem - 1];
+  int i, tempo;
+  for(i = 0; i < n_elem; i++){ 
+    tempo = vettore[n_elem - 1];
+    vettore[n_elem -1] = vettore[i];
+    vettore[i] = tempo;
+
     n_elem--;
   }
 }
