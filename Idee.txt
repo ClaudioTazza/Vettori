@@ -1,0 +1,19 @@
+Definizione scenari d'uso:
+  Definizione dei ruoli:
+    Amministratore; //Persona competente
+    Gestore; //Nominato dall'amministratore
+    Utente; //Tutti coloro che si registrano
+
+  Struttura programma:
+    Registrazione utente;
+    Schermata utente di selezione panino;
+    Schermata amministratore con panini richiesti;
+    Possibilità di confermare il pagamento dell'utente;
+
+  Tecnologie:
+    Mysql;
+    php;
+    html;
+
+    Dispositivo:
+      server generico;
