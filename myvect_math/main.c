@@ -2,18 +2,22 @@
 #include "myvect.h"
 #include "vmath.h"
 
+#define DIMVET 10
+
 int main(){
 
-  int vettore[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, dim_vet, media;
-  dim_vet = 10;
+  int vettore[DIMVET];
+  double media = 3.0;
 
   myvect_init();
-  myvect_print(vettore, dim_vet);
+
+  myvect_vec_in_range(vettore, DIMVET, 0, 300);
+  myvect_print(vettore, DIMVET);
 
   printf("\n\n");
 
-  media = vmath_media(vettore, dim_vet);
-  printf("  media: %d\n", media);
+  media = vmath_media(vettore, DIMVET);
+  printf("  media: %lf\n", media);
 
   return 0;
 }
