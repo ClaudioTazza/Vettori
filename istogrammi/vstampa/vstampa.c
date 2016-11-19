@@ -3,8 +3,7 @@
 void vstampa_istogrammi(int valore){
   int i;
 
-  for (i = 0; i < valore; i++)
-    printf("#");
+  for (i = 0; i < valore; i++) putchar('#');
   
-  printf("\n");
+  putchar('\n');
 }
