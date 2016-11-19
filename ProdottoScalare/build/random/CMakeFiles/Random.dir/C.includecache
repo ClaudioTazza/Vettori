@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lucifero/Scrivania/vettori/ProdottoScalare/random/random.c
+random.h
+/home/lucifero/Scrivania/vettori/ProdottoScalare/random/random.h
+stdlib.h
+-
+time.h
+-
+
+/home/lucifero/Scrivania/vettori/ProdottoScalare/random/random.h
+

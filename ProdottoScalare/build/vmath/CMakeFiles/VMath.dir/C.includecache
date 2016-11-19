@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lucifero/Scrivania/vettori/ProdottoScalare/vmath/vmath.c
+stdio.h
+-
+vmath.h
+/home/lucifero/Scrivania/vettori/ProdottoScalare/vmath/vmath.h
+
+/home/lucifero/Scrivania/vettori/ProdottoScalare/vmath/vmath.h
+
