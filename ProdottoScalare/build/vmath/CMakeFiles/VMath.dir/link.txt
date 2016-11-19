@@ -1,2 +1,0 @@
-/usr/bin/ar qc libVMath.a  CMakeFiles/VMath.dir/vmath.c.o
-/usr/bin/ranlib libVMath.a

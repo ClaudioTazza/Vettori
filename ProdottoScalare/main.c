@@ -5,7 +5,7 @@
 #define ELEM 10
 
 int main(){
-  int vettore[ELEM], vettore2[ELEM], i, PS;
+  int vettore[ELEM], vettore2[ELEM], PS;
 
   myvect_init();
 
