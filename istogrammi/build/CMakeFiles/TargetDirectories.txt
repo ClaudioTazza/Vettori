@@ -1,0 +1,2 @@
+/root/Scrivania/vettori/istogrammi/build/CMakeFiles/Main.dir
+/root/Scrivania/vettori/istogrammi/build/vstampa/CMakeFiles/Vstampa.dir

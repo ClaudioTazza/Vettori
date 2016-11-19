@@ -1,0 +1,2 @@
+/usr/bin/ar cr libVstampa.a  CMakeFiles/Vstampa.dir/vstampa.c.o
+/usr/bin/ranlib libVstampa.a

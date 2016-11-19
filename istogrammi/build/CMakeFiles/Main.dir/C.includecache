@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../vstampa/vstampa.h
+
+/root/Scrivania/vettori/istogrammi/main.c
+stdio.h
+-
+vstampa.h
+/root/Scrivania/vettori/istogrammi/vstampa.h
+
