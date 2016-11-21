@@ -34,12 +34,11 @@ void bubble_sort(int v[], const int size)
   int i;
   int temp;
   int controllore;
-  int regolatore = 1;
 
   for (pass = 1; pass < size; pass++) {
     controllore = 0;
 
-    for (i = 0; i < size-regolatore; i++) {
+    for (i = 0; i < size-pass; i++) {
       if (v[i] > v[i+1]) {
         temp = v[i];
         v[i] = v[i+1];
@@ -48,7 +47,6 @@ void bubble_sort(int v[], const int size)
         controllore = 1;
       }
     }
-    regolatore++;
     if(controllore == 0) break;
   }
 }
