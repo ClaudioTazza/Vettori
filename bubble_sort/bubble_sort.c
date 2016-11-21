@@ -34,11 +34,12 @@ void bubble_sort(int v[], int size)
   int i;
   int temp;
   int controllore;
+  int celleNVerificate = size;
 
-  for (pass=1; pass<size; pass++) {
+  for (pass = 1; pass < celleNVerificate; pass++) {
     controllore = 0;
 
-    for (i=0; i<size-1; i++) {
+    for (i = 0; i < celleNVerificate-1; i++) {
       if (v[i] > v[i+1]) {
         temp = v[i];
         v[i] = v[i+1];
@@ -48,7 +49,7 @@ void bubble_sort(int v[], int size)
     }
 
     if(controllore == 0) break;
-    size--;
+    celleNVerificate--;
 
   }
 }
