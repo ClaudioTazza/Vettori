@@ -28,7 +28,7 @@ int main()
   return 0;
 }
 
-void bubble_sort(int v[], int size)
+void bubble_sort(int v[], const int size)
 {
   int pass;
   int i;
