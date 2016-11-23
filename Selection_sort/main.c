@@ -13,7 +13,7 @@ int main(){
   printf("Prima\n");
   myvect_print(vettore, ELEM);
 
-  vsort_ordinaMeglio(vettore, ELEM, 0);
+  vsort_ordinaMeglio(vettore, ELEM, 0, 1);
 
   printf("Dopo\n");
   myvect_print(vettore, ELEM);

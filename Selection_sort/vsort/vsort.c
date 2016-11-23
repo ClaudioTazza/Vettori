@@ -21,19 +21,20 @@ void vsort_ordina(int v[], const int size)
   }
 }
 
-void vsort_ordinaMeglio(int vettore[], const int n_elem, int celltostart)
+void vsort_ordinaMeglio(int vettore[], const int n_elem, int celltostart, int conta)
 {
-  int i, temp;
+  int temp;
 
-  if(celltostart < n_elem){
-    for(i = celltostart+1; i < n_elem; i++){
-      if (vettore[celltostart] > vettore[i]){
-      temp = vettore[celltostart];
-      vettore[celltostart] = vettore[i];
-      vettore[i] = temp;
-      }
-    }
-   vsort_ordinaMeglio(vettore, n_elem, celltostart+1);
+  if( celltostart + conta == n_elem- 1 ){
+    vsort_ordinaMeglio(vettore, n_elem, celltostart++, 1);
+  }
+
+  if( vettore[celltostart] > vettore[celltostart + conta] ){
+    temp = vettore[celltostart];
+    vettore[celltostart] = vettore[celltostart + conta];
+    vettore[celltostart + conta] = temp;
+
+    vsort_ordinaMeglio(vettore, n_elem, celltostart, conta++);
   }
 }
 
