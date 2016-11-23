@@ -29,7 +29,7 @@ void vsort_ordinaMeglio(int vettore[], const int n_elem, int celltostart, int co
     vsort_ordinaMeglio(vettore, n_elem, celltostart++, 1);
   }
 
-  if( vettore[celltostart] > vettore[celltostart + conta] ){
+  else if( vettore[celltostart] < vettore[celltostart + conta] ){
     temp = vettore[celltostart];
     vettore[celltostart] = vettore[celltostart + conta];
     vettore[celltostart + conta] = temp;
