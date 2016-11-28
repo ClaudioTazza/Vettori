@@ -31,7 +31,9 @@ int main()
     printf("\n**********\n");
     printf("Ricerca #%d\n", counter);
     printf("Cerco il valore %d\n\n", valore_da_cercare);
+
     posizione = myvect_linear_search(v, SIZE, valore_da_cercare);
+
     if (posizione<0) {
       printf("%d non trovato!\n", valore_da_cercare);
     } else {
