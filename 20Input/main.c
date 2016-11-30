@@ -12,10 +12,10 @@ int main(){
     scanf("%d", &val);
 
     controllore = myvect_linear_search(vettore, SIZE, val); 
-    vettore[i] = val;
 
     if(controllore < 0){
       printf("%d\n", val);
+      vettore[i] = val;
     }
   }
 
