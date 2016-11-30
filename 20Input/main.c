@@ -5,16 +5,17 @@
 
 int main(){
 
-  int vettore[SIZE] = {0}, i, controllore;
+  int vettore[SIZE] = {0}, i, controllore, val;
 
   for(i = 0; i < SIZE; i++){
     printf("Inserisci il numero %d : ", i+1);
-    scanf("%d", &vettore[i]);
+    scanf("%d", &val);
 
-    controllore = myvect_linear_search(vettore, SIZE, vettore[i]); 
+    controllore = myvect_linear_search(vettore, SIZE, val); 
+    vettore[i] = val;
 
-    if(controllore == 0){
-      printf("%d\n", vettore[i]);
+    if(controllore < 0){
+      printf("%d\n", val);
     }
   }
 
