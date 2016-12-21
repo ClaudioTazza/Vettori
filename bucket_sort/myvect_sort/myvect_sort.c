@@ -59,10 +59,10 @@ void myvect_selection_sort_helper(int v[], int size, int index)
 
 
 void myvect_bucket_sort(int v[], int size, int m[][10], int rows, int cols){
-  int i, ColEsatta;
+  int i, RowEsatta;
 
   for(i = 0; i < size; i++){
-    ColEsatta = v[i] % 2;
-    m[1][ColEsatta] = v[i];
+    RowEsatta = v[i] % 10;
+    m[RowEsatta][0] = v[i];
   }
 }

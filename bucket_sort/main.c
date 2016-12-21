@@ -12,7 +12,7 @@ int main(){
   myvect_init();
   init_matrice(matrice, ROWS, COLS);
 
-  myvect_init_in_range(vettore, NELEM, 10, 20);
+  myvect_init_in_range(vettore, NELEM, 0, 10);
   myvect_print(vettore, NELEM);
 
   myvect_bucket_sort(vettore, NELEM, matrice, ROWS, COLS);

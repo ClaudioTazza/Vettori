@@ -11,7 +11,7 @@ void init_matrice(int m[][10], int rows, int cols)
 
   for (r=0; r<rows; r++) {
     for (c=0; c<cols; c++) {
-      m[r][c] = r*c;
+      m[r][c] = 0;
     }
   }
 }
