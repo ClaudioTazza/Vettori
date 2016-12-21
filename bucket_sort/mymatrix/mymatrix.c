@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "mymatrix.h"
 
-void init_matrice(int m[][1024], int rows, int cols)
+void init_matrice(int m[][10], int rows, int cols)
 {
   int r, c;
 
@@ -16,7 +16,7 @@ void init_matrice(int m[][1024], int rows, int cols)
   }
 }
 
-void print_matrice(int m[][1024], int rows, int cols)
+void print_matrice(int m[][10], int rows, int cols)
 {
   int r, c;
 
