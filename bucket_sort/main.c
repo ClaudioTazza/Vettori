@@ -12,8 +12,10 @@ int main(){
   myvect_init();
   init_matrice(matrice, ROWS, COLS);
 
-  myvect_init_in_range(vettore, NELEM, 0, 10);
+  myvect_init_in_range(vettore, NELEM, 0, 100);
   myvect_print(vettore, NELEM);
+
+  printf("\n\n");
 
   myvect_bucket_sort(vettore, NELEM, matrice, ROWS, COLS);
   print_matrice(matrice, ROWS, COLS);
