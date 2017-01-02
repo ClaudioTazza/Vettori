@@ -61,7 +61,7 @@ void myvect_selection_sort_helper(int v[], int size, int index)
 #define COLS 10
 
 void myvect_bucket_sort(int v[], int size){
-  int i, Matrice[ROWS][COLS], RowEsatta, ColEsatta;
+  int i, Matrice[ROWS][COLS], RowEsatta, ColEsatta, vor[size], conta;
 
   for(i = 0; i < size; i++){
     ColEsatta = 0;
@@ -73,16 +73,17 @@ void myvect_bucket_sort(int v[], int size){
     Matrice[RowEsatta][ColEsatta] = v[i];
   }
 
-  RowEsatta = 0;
-  ColEsatta = 0;  
-
-  for(i = 0; i < size; i++){
-    while( Matrice[RowEsatta][ColEsatta] == 0){
-      RowEsatta++;
-      ColEsatta = 0;
+  for(RowEsatta = 0; RowEsatta < ROWS; RowEsatta++){
+    for(ColEsatta = 0; ColEsatta < COLS; ColEsatta++){
+      for(i = 0; i < size; i++){
+        if(Matrice[RowEsatta][ColEsatta] == v[i]){
+	  vor[conta] = v[i];
+	  conta++;
+	}
+      }
     }
+  }
 
-    v[i] = Matrice[RowEsatta][ColEsatta];
-    ColEsatta++;
-  }  
+  v[size] = vor[size];
 }
+
