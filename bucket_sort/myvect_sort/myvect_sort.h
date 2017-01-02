@@ -5,6 +5,6 @@
 
 void myvect_bubble_sort(int v[], int size);
 void myvect_selection_sort(int v[], int size);
-void myvect_bucket_sort(int v[], int size, int m[][10], int rows, int cols);
+void myvect_bucket_sort(int v[], int size);
 
 #endif
