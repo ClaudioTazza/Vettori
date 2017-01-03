@@ -71,19 +71,7 @@ void myvect_bucket_sort(int v[], int size){
       ColEsatta++;
 
     Matrice[RowEsatta][ColEsatta] = v[i];
+    printf("\n%d", Matrice[RowEsatta][ColEsatta]);
   }
-
-  for(RowEsatta = 0; RowEsatta < ROWS; RowEsatta++){
-    for(ColEsatta = 0; ColEsatta < COLS; ColEsatta++){
-      for(i = 0; i < size; i++){
-        if(Matrice[RowEsatta][ColEsatta] == v[i]){
-	  vor[conta] = v[i];
-	  conta++;
-	}
-      }
-    }
-  }
-
-  v[size] = vor[size];
 }
 
