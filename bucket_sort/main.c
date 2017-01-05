@@ -16,6 +16,7 @@ int main(){
   printf("\n\n");
 
   myvect_bucket_sort(vettore, NELEM);
+  myvect_print(vettore, NELEM);
 
   return 0;
 }

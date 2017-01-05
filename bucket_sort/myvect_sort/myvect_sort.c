@@ -70,5 +70,19 @@ void myvect_bucket_sort(int v[], int size){
     Matrice[RowEsatta][ColEsatta] = v[i];
     conta[RowEsatta]++;
   }
+
+  ColEsatta = 0;
+  RowEsatta = 0;
+  i = 0;
+  while(i < size){
+    while(conta[RowEsatta] > 0){
+      v[i] = Matrice[RowEsatta][ColEsatta];
+      conta[RowEsatta]--;
+      ColEsatta++;
+      i++;
+    }
+    RowEsatta++;
+    ColEsatta = 0;
+  }
 }
 
