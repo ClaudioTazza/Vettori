@@ -10,7 +10,7 @@ int main(){
   int vettore[NELEM];
   myvect_init();
  
-  myvect_init_in_range(vettore, NELEM, 0, 100000);
+  myvect_init_in_range(vettore, NELEM, 0, 1000);
   myvect_print(vettore, NELEM);
 
   printf("\n\n");
