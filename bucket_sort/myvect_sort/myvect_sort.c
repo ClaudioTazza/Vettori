@@ -58,7 +58,7 @@ void myvect_selection_sort_helper(int v[], int size, int index)
 }
 
 void myvect_bucket_sort(int v[], int size){
-  int ROWS = size, COLS = 10;
+  int ROWS = 10, COLS = size;
   int i, Matrice[ROWS][COLS], RowEsatta, ColEsatta, conta[10] = {0}, Divisore = 1;
 
   while (1){
