@@ -72,7 +72,7 @@ void myvect_bucket_sort(int v[], int size){
     conta[RowEsatta]++;
   }
   
-  if(conta[0] == 10)
+  if(conta[0] == size)
     break;
 
   ColEsatta = 0;

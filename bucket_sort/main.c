@@ -3,7 +3,7 @@
 #include "myvect_sort.h"
 
 /* basta mettere un numero maggiore di 10 per mandarlo in crisi */
-#define NELEM 10
+#define NELEM 11
 
 int main()
 {
