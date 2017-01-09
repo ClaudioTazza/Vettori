@@ -2,15 +2,15 @@
 #include "myvect.h"
 #include "myvect_sort.h"
 
+/* basta mettere un numero maggiore di 10 per mandarlo in crisi */
 #define NELEM 10
-#define ROWS 10
-#define COLS 10
 
-int main(){
+int main()
+{
   int vettore[NELEM];
   myvect_init();
- 
-  myvect_init_in_range(vettore, NELEM, 0, 1000);
+
+  myvect_init_in_range(vettore, NELEM, 0, 10000);
   myvect_print(vettore, NELEM);
 
   printf("\n\n");
